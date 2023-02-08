@@ -1,7 +1,7 @@
-# Testing of the teamEM function
+# Testing of the fishEM function
 
 # Sourcing the code from the Working File
-source("~/MT4113/assignment2-team-1/Working_file.R")
+source("~/MT4113/Fish Weight/Working_file.R")
 
 # setting seed to freeze sample distribution
 set.seed(1234)
@@ -22,7 +22,7 @@ sim_rand <- sim_tot[sample(nrow(sim_tot), 1000),]
 # Viewing the sample as a histogram
 hist(sim_rand$Length, breaks = 40, xlim = c(0, 120))
 
-# Creating the initial data frame for the teamEM function
+# Creating the initial data frame for the fishEM function
 test_dat <- data.frame(FishID = 1:1000, Length = sim_rand$Length, Age = sim_rand$Age)
 
 # Allocating known values to 100 fish lengths by studying histogram
@@ -49,7 +49,7 @@ hist(known$Length, breaks = 40)
 
 # Testing the function for the above data and finding confidence intervals
 # for the means of each age group
-test_results <- teamEM(test_dat)
+test_results <- fishEM(test_dat)
 
 # Extracting the estimates, calc. standard error and margin error
 test_est <- test_results$estimates

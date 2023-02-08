@@ -1,8 +1,8 @@
-#Test file for teamEM 
-source('teamEM.r')
+#Test file for fishEM 
+source('fishEM.r')
 
-test_teamEM <- function(data, epsilon = 0.0001){
-  test <- teamEM(data)
+test_fishEM <- function(data, epsilon = 0.0001){
+  test <- fishEM(data)
   
   #test the number of values in the posterior
   pass.test1 <- if ((nrow(test$posterior)) == 1000 & (ncol(test$posterior)) == 3) TRUE else FALSE
@@ -32,7 +32,7 @@ test_teamEM <- function(data, epsilon = 0.0001){
 }
 
 # Plotting of output distribution on histogram to test fit
-test <- teamEM(data)
+test <- fishEM(data)
 
 ggplot(x, aes(x = Length)) + geom_histogram(binwidth = 1) +
   mapply(

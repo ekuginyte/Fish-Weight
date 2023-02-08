@@ -14,7 +14,7 @@ load("FishLengths.RData")
 # from populations with identical distributions or not.
 test_initialise <- function(data) {
   # Check if the function takes in the correct arguments
-  # Check if the input data is appropriate for the teamEM function: 
+  # Check if the input data is appropriate for the fishEM function: 
   # data must be data frame, have more than two rows, have values, have 3 
   # numeric Age groups, Length column should be numeric with some missing 
   # values, FishID should be a whole number.
