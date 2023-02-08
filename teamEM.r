@@ -24,9 +24,9 @@ data <- x
 #   likelihood - vector of length equals to number of iterations, maximum 
 #   length equals to maxit.
 
-teamEM <- function(data, epsilon = 1e-08, maxit = 1000) {
+fishEM <- function(data, epsilon = 1e-08, maxit = 1000) {
 
-  # Check if the input data is appropriate for the teamEM function: 
+  # Check if the input data is appropriate for the fishEM function: 
   # data must be data frame, have more than two rows, have values, have 3 
   # numeric Age groups, Length column should be numeric with some missing 
   # values, FishID should be a whole number
@@ -239,7 +239,7 @@ teamEM <- function(data, epsilon = 1e-08, maxit = 1000) {
         converged <- TRUE
         likelihood <- likelihood[1 : counter]
         print(paste("No of iterations is ", counter))
-        # The required list that the teamEM function should return 
+        # The required list that the fishEM function should return 
         final_return <- list(estimates = estimates, inits = inits,
                              converged = converged, posterior = posterior, 
                              likelihood = likelihood)
