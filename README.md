@@ -1,3 +1,7 @@
+EM Algorithm for Fish Length Data with Some Unknown Age Groups
+
+See the report.pdf for extensive explanation of the project.
+
 ## Description of files
 1. simulation_testing.R - R file to simulate sample from Gaussian Mixture
 and test the data on fishEM() function
