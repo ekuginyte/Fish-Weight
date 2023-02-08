@@ -289,7 +289,7 @@ In order to obtain the simulated data, the function samples 1000 values from 3 d
 #             confidence intervals
 
   # Sourcing the code from the Working File
-  source("~/Documents/GitHub/Fish Weight/fishEM.R")
+  source("~/Desktop/Projects for Applications/Fish-Weight/fishEM.R")
 
   # Test code with known values
   data <- x
