@@ -1,0 +1,23 @@
+Initial spread of tasks were by steps in the EM algorithm (GitHub usernames):
+
+Initialise - @ekuginyte 
+Expectation - @TYHan20
+Maximisation - @holzerz
+Testing Convergence - @man918
+
+These tasks were mostly completed by the team member assigned to them
+
+Report - @man918, @TYHan20
+Design file (pseudo code) - @TYHan20, @ekuginyte
+
+Since @TYHan20 couldn't access the team's repository for some time, the commits were made
+for her by teammates.
+
+We have all physically met multiple times:
+split the workload and worked on the pseudo-code 12/10, 
+continued working together from the library 15/10,
+created the rest of the files 22/10,
+fixed the loop issues, finished the report 27/10.
+
+Loads of commits were made by all of the teammates, which can be seen in the history of 
+the teamEM.r
